@@ -9,28 +9,44 @@ Basic Usage
 -----------
 
 Thing = Class.extend()
+<br/>
 Thing.prototype.do = function(){ console.log('doing') }
+<br/>
 
 thing = new Thing()
+<br/>
 thing.do()  // outputs 'doing'
+<br/>
 
 Animal = Thing.extend()
+<br/>
 
 animal = new Animal();
+<br/>
 animal.do()  // outputs 'doing'
+<br/>
 
 Thing.prototype.do = function(){ console.log('cant') }
+<br/>
 
 animal.do()  // outputs 'cant'
+<br/>
 
 Thing.prototype === Animal.prototype  // true
+<br/>
 
 Animal.prototype.do = function() { console.log('wont') }
+<br/>
 
 thing.do()  // outputs 'cant'
+<br/>
 
 Thing.prototype.do === Animal.prototype.do  // false
+<br/>
 
 animal instanceof Animal  // true
+<br/>
 animal instanceof Thing   // true
+<br/>
 animal instanceof Class   // true
+<br/>
