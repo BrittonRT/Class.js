@@ -1,3 +1,8 @@
+/*
+**  Class.js
+**
+**  Dependencies: none
+*/
 ;var Class = (function(){
 		;'use strict';
 		function extend(o) {
